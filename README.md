@@ -6,11 +6,11 @@ CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS  
 
  curl http://localhost:8084
  
- <!DOCTYPE html>
- <html lang="pt-BR"
- <head>
-  <meta charset="UTF-8"
-  <title>Pedidos</title>
- </head>
- <body>
-</html>
+ !DOCTYPE html
+ html lang="pt-BR"
+ head
+  meta charset="UTF-8"
+  title>Pedidos</title
+ /head
+ body
+/html
