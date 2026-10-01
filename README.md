@@ -1,16 +1,24 @@
-# Prova
+# Prova 1 de Comuptação em Nuvem
 
-docker ps
+nome: Otavio Henrique Turolli 
+RA: a154786cd5b10587ea2d
+## O que fiz
+Executei uma pagina eb em um contêiner Docker Chamado pedidos.
+Usei a Imagem nginx:alpine e a porta 8084 do ambiente 
+## Verificação do contêiner
+ docker ps
 CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                                     NAMES
 60c6020b202f   nginx:alpine   "/docker-entrypoint.…"   43 seconds ago   Up 42 seconds   0.0.0.0:8084->80/tcp, [::]:8084->80/tcp   pedidos
+## Teste da página
+curl http://localhost:8084
+> <!DOCTYPE html>
+> <html lang="pt-BR"
+> <head>
+>  <meta charset="UTF-8"
+>  <title>Pedidos</title>
+> </head>
+> <body>
+</html>
+## Explicação 
 
- curl http://localhost:8084
- 
- !DOCTYPE html
- html lang="pt-BR"
- head
-  meta charset="UTF-8"
-  title>Pedidos</title
- /head
- body
-/html
+A imagen nginx:alpine ela e somente uma imagem ja o contêiner pedidos ele e o cotêiner em si. O mapeamento da porta 8084:80 serviu para identificar qual e a porta do localhost e a do contêiner, 8084 localhost e a :80 e a do contêiner
